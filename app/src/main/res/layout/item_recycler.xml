@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Task Name"
+            android:id="@+id/tvTask"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Status"
+            android:id="@+id/tvStatus"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Start Date"
+        android:id="@+id/tvDate"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Description"
+        android:layout_marginVertical="8dp"
+        android:id="@+id/tvDesc"/>
+
+    <LinearLayout
+        android:layout_marginVertical="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/btnDelete"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/btnEdit"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/btnStatus"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp" />
+            </LinearLayout>
+</LinearLayout>
